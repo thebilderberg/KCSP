@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>KCSP | Kstovo Car Service Perspective</title>
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Space Grotesk + Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+    <div class="logo">KCSP</div>
+    <div class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></div>
+    <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Главная</a>
+        <a href="#services" class="nav-link">Услуги</a>
+        <a href="#gallery" class="nav-link">Портфолио</a>
+        <a href="#contact" class="nav-link">Контакты</a>
+    </div>
+</nav>
+
+<main>
+    <!-- Hero section с фоновым видео -->
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1200&fit=crop">
+            <source src="carvideo.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео, но ремонт и покраска ждут вас!
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="particles" id="particlesContainer"></div>
+        <div class="hero-content">
+            <h1>Кузовной ремонт<br>и премиум покраска</h1>
+            <p>Восстановим геометрию, цвет и блеск вашего авто. Полный цикл работ — от рихтовки до полимера.</p>
+            <a href="#contact" class="btn-glow">Записаться на осмотр <i class="fas fa-arrow-right"></i></a>
+            <div class="hero-stats">
+                <div class="stat-item"><div class="stat-number">7+</div><div>лет опыта</div></div>
+                <div class="stat-item"><div class="stat-number">1200+</div><div>отремонтировано авто</div></div>
+                <div class="stat-item"><div class="stat-number">100%</div><div>гарантия цвета</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section с изображениями в карточках -->
+    <section id="services" style="padding: 5rem 0 4rem;">
+        <div class="container">
+            <h2 class="section-title">Наши <span style="color:#ff5e45">услуги</span></h2>
+            <div class="section-sub">Точное восстановление и индивидуальный подход</div>
+            <div class="services-grid">
+                <!-- Покраска авто -->
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="skyline.jpeg" alt="Покраска авто" class="service-image">
+                        <div class="service-icon-overlay"><i class="fas fa-paint-roller"></i></div>
+                    </div>
+                    <h3>Покраска авто</h3>
+                    <p>Подбор цвета, камеры подготовки, полимерные лаки, 3D подбор.</p>
+                </div>
+                <!-- Рихтовка & правка -->
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="setting.jpeg" alt="Рихтовка и правка" class="service-image">
+                        <div class="service-icon-overlay"><i class="fas fa-car-side"></i></div>
+                    </div>
+                    <h3>Рихтовка & правка</h3>
+                    <p>Беспокрасочная PDR, вытяжка геометрии, подготовка к покраске.</p>
+                </div>
+                <!-- Диагностика ЛКП -->
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="diagnost.jpeg" alt="Диагностика ЛКП" class="service-image">
+                        <div class="service-icon-overlay"><i class="fas fa-microscope"></i></div>
+                    </div>
+                    <h3>Диагностика ЛКП</h3>
+                    <p>Толщиномер, выявление скрытых дефектов, полный отчёт.</p>
+                </div>
+                <!-- Детейлинг & керамика -->
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="hydrofob.jpeg" alt="Детейлинг и керамика" class="service-image">
+                        <div class="service-icon-overlay"><i class="fas fa-brush"></i></div>
+                    </div>
+                    <h3>Детейлинг & керамика</h3>
+                    <p>Полировка, жидкое стекло, керамическое покрытие.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / before-after section -->
+    <section id="gallery" style="padding: 3rem 0 5rem;">
+        <div class="container">
+            <h2 class="section-title">До / После</h2>
+            <div class="section-sub">Примеры работ, которые говорят сами за себя</div>
+            <div class="gallery-wrap">
+                <div class="card-ba"><div class="ba-img" style="background-image: linear-gradient(0deg, #00000066, #00000066), url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop'); background-size:cover;"><span class="ba-label" style="top:10px; left:10px;">ДО</span></div><p>Сильные царапины + сколы</p></div>
+                <div class="card-ba"><div class="ba-img" style="background-image: linear-gradient(0deg, #00000066, #00000066), url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&h=400&fit=crop'); background-size:cover;"><span class="ba-label" style="top:10px; left:10px;">ПОСЛЕ</span></div><p>Идеальный глянец, цвет perfect match</p></div>
+                <div class="card-ba"><div class="ba-img" style="background-image: linear-gradient(0deg, #00000066, #00000066), url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&h=400&fit=crop'); background-size:cover;"><span class="ba-label" style="top:10px; left:10px;">РЕМОНТ</span></div><p>Восстановление геометрии крыла</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- why us + преимущества -->
+    <section style="padding: 2rem 0;">
+        <div class="container">
+            <h2 class="section-title">Почему <span style="color:#ff5e45">KCSP</span></h2>
+            <div class="features-list">
+                <div class="feature"><i class="fas fa-tachometer-alt"></i><h3>Сжатые сроки</h3><p>Рихтовка за 1 день, покраска от 2 дней</p></div>
+                <div class="feature"><i class="fas fa-hand-sparkles"></i><h3>Оборудование SATA, Standox</h3><p>Только качественные материалы</p></div>
+                <div class="feature"><i class="fas fa-shield-alt"></i><h3>Гарантия 3 года</h3><p>На лакокрасочное покрытие и работы</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact form section -->
+    <section id="contact" style="padding: 3rem 0 5rem;">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <div class="section-sub">Оставьте заявку — мы перезвоним и проконсультируем бесплатно</div>
+            <div class="contact-flex">
+                <div class="form-group">
+                    <form id="requestForm">
+                        <input type="text" placeholder="Ваше имя" id="name" required>
+                        <input type="tel" placeholder="Номер телефона" id="phone" required>
+                        <select id="serviceSelect">
+                            <option value="Покраска">Покраска автомобиля</option>
+                            <option value="Рихтовка">Кузовной ремонт</option>
+                            <option value="Диагностика">Диагностика ЛКП</option>
+                        </select>
+                        <textarea rows="3" placeholder="Комментарий (модель авто, пожелания)"></textarea>
+                        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Отправить заявку</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3><i class="fas fa-map-marker-alt"></i> Наш центр</h3>
+                    <p><i class="fas fa-location-dot"></i> Кстово, ул. Автомоторная 14, стр.3</p>
+                    <p><i class="fas fa-clock"></i> Пн-Вс: 9:00 – 20:00 : По записи</p>
+                    <p><i class="fas fa-phone-alt"></i> +7 (910) 122-72-96</p>
+                    <p><i class="fab fa-instagram"></i> @xcloudcom</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 KCSP — Премиум кузовной ремонт и покраска. Все права защищены.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
