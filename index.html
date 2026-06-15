@@ -67,7 +67,7 @@
                         <div class="service-icon-overlay"><i class="fas fa-car-side"></i></div>
                     </div>
                     <h3>Рихтовка & правка</h3>
-                    <p>Беспокрасочная PDR, вытяжка геометрии, подготовка к покраске.</p>
+                    <p>Вытяжка геометрии, подготовка к покраске.</p>
                 </div>
                 <!-- Диагностика ЛКП -->
                 <div class="service-card">
@@ -75,7 +75,7 @@
                         <img src="diagnost.jpeg" alt="Диагностика ЛКП" class="service-image">
                         <div class="service-icon-overlay"><i class="fas fa-microscope"></i></div>
                     </div>
-                    <h3>Диагностика ЛКП</h3>
+                    <h3>Автоподбор</h3>
                     <p>Толщиномер, выявление скрытых дефектов, полный отчёт.</p>
                 </div>
                 <!-- Детейлинг & керамика -->
@@ -95,19 +95,41 @@
     <section id="gallery" style="padding: 3rem 0 5rem;">
         <div class="container">
             <h2 class="section-title">До / После</h2>
-            <div class="section-sub">Примеры работ, которые говорят сами за себя</div>
+            <div class="section-sub">Наведи курсор, чтобы увидеть результат</div>
             <div class="gallery-wrap">
-                <div class="card-ba"><div class="ba-img" style="background-image: linear-gradient(0deg, #00000066, #00000066), url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop'); background-size:cover;"><span class="ba-label" style="top:10px; left:10px;">ДО</span></div><p>Сильные царапины + сколы</p></div>
-                <div class="card-ba"><div class="ba-img" style="background-image: linear-gradient(0deg, #00000066, #00000066), url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&h=400&fit=crop'); background-size:cover;"><span class="ba-label" style="top:10px; left:10px;">ПОСЛЕ</span></div><p>Идеальный глянец, цвет perfect match</p></div>
-                <div class="card-ba"><div class="ba-img" style="background-image: linear-gradient(0deg, #00000066, #00000066), url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&h=400&fit=crop'); background-size:cover;"><span class="ba-label" style="top:10px; left:10px;">РЕМОНТ</span></div><p>Восстановление геометрии крыла</p></div>
+                <div class="card-ba">
+                    <div class="ba-img" style="background-image: linear-gradient(0deg, #00000066, #00000066), url('before.jpg'); background-size:cover;">
+                        <span class="ba-label" style="top:10px; left:10px;">ДО</span>
+                    </div>
+                    <p>Сильные царапины + сколы</p>
+                </div>
+                <div class="card-ba">
+                    <div class="ba-img" style="background-image: linear-gradient(0deg, #00000066, #00000066), url('after.jpg'); background-size:cover;">
+                        <span class="ba-label" style="top:10px; left:10px;">ПОСЛЕ</span>
+                    </div>
+                    <p>Идеальный глянец, цвет perfect match</p>
+                </div>
+                <div class="card-ba">
+                    <div class="ba-img" style="background-image: linear-gradient(0deg, #00000066, #00000066), url('work.jpg'); background-size:cover;">
+                        <span class="ba-label" style="top:10px; left:10px;">РЕМОНТ</span>
+                    </div>
+                    <p>Восстановление геометрии крыла</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- why us + преимущества -->
-    <section style="padding: 2rem 0;">
-        <div class="container">
+     <!-- why us + преимущества с фоновым видео -->
+    <section class="why-section" style="padding: 4rem 0; position: relative; overflow: hidden;">
+        <!-- Фоновое видео -->
+        <video class="why-video" autoplay loop muted playsinline>
+            <source src="skyvideo.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео
+        </video>
+        <div class="why-overlay"></div>
+        <div class="container" style="position: relative; z-index: 2;">
             <h2 class="section-title">Почему <span style="color:#ff5e45">KCSP</span></h2>
+            <div class="section-sub">Наши преимущества, которые говорят сами за себя</div>
             <div class="features-list">
                 <div class="feature"><i class="fas fa-tachometer-alt"></i><h3>Сжатые сроки</h3><p>Рихтовка за 1 день, покраска от 2 дней</p></div>
                 <div class="feature"><i class="fas fa-hand-sparkles"></i><h3>Оборудование SATA, Standox</h3><p>Только качественные материалы</p></div>
@@ -140,7 +162,7 @@
                     <p><i class="fas fa-location-dot"></i> Кстово, ул. Автомоторная 14, стр.3</p>
                     <p><i class="fas fa-clock"></i> Пн-Вс: 9:00 – 20:00 : По записи</p>
                     <p><i class="fas fa-phone-alt"></i> +7 (910) 122-72-96</p>
-                    <p><i class="fab fa-instagram"></i> @xcloudcom</p>
+                    <p><i class="fab fa-telegram"></i> @xcloudcom</p>
                 </div>
             </div>
         </div>
